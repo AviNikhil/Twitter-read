@@ -1,0 +1,145 @@
+                    >>>>>>LINUX COMMANDS<<<<<<<<<<
+
+1.CAT COMMAND:
+
+**to View the Content of a Single File in Linux
+    Syntax:  cat file_name
+
+**to View the Content of Multiple Files in Linux
+    Syntax:  cat file_name1 file_name2
+
+**to numbering each line in file we use
+    syntax:  cat -n file_name
+
+**to Create a file and add content in Linux Using `cat` Command:
+        Syntax: cat > filename  (we can write content here)
+
+**to Copy the Contents of One File to Another File in Linux or 
+  to concatenate two or more files:
+        syntax: cat t1.txt  t2.txt>concat.txt (concat)
+                cat t1.txt>t2.txt (conntent copy)
+
+**Cat command can suppress repeated empty lines in output 
+        cat -s file_name
+
+**to Append the Contents of One File to the End of Another File 
+         Syntax: cat file_name1 >> file_name2 (>>)
+
+**to Display Content in Reverse Order Using `tac` Command in Linux 
+         Syntax: tac file_name
+
+** to Highlight the End of Line in Linux 
+      Syntax:  cat -E "filename"
+
+**cat command that used to numbering only non-empty lines
+     synax : cat -b t1.txt
+     
+** Cat command if the file has a lot of content and can’t fit in the terminal. 
+    Syntax:  cat "filename" | more
+    Will show that much content, which could fit in terminal and will ask to show more.
+    
+**To display the content of all text files in a folder, use the wildcard (‘*.txt’):
+    Syntax: cat *.txt
+  
+**To append text to an existing file, use the ‘>>’ operator along with ‘cat’:
+    Syntax: cat >> geeks.txt
+
+=====================================================================================================
+2. ls COMMAND:
+
+**command that lists directory contents of files and directories : ls
+**Display One File Per Line Using : ls -1 
+**Display All Information About Files/Directories Using : ls -l
+** Display File Size in Human Readable Format Using : ls -lh
+**Display Directory Information Using :ls -ld
+** Display Hidden Files Using ls -a (or) ls -A 
+======================================================================================================
+3. pwd COMMAND
+**The ‘pwd,’ which stands for “print working directory.” it
+is used to find the current location of working directory
+======================================================================================================
+4. mkdir COMMAND
+**this command used to create the directory in terminal 
+   syntax: mkdir direc
+======================================================================================================
+5.rmdir COMMAND
+**this command used to delete the directory in terminal
+  syntax: rmdir direc name
+
+**the -p option with the rmdir command to delete a directory, including all the subdirectories:
+
+  syntax :   rmdir -p mydir1/mydir2/mydir3/...../mydirN
+======================================================================================================
+6. cd COMMAND
+**this command used to change the directory path
+======================================================================================================
+7. cp COMMAND
+**Copying Between Two Files in Linux
+   syntax : cp sourcefile.txt desti.txt
+ 
+**Copy files to a Directory in Linux
+  syntax: cp filename <directory path where it should be copied>
+  
+**Copying Files Between Two Directories in Linux
+  syntax : cp -R Src_directory Dest_directory
+ 
+**Copy a File in Linux Using `-i` Option
+  -i option initiates a interactive copy that
+  ask permission to ovewrite content in destifile.
+  syntax: cp -i source_file destination_file
+  
+ ** Copy a File in Linux Using `-f` Option
+     If the system is unable to open destination file for writing operation
+     because the user doesn’t have writing permission for this file 
+     then by using -f option with cp command
+     syntax : cp -f f1.txt f2.txt
+============================================================================================
+8.  mv COMMAND
+**Two Distinct Functions of `mv` Command
+
+    1) Renaming a file or directory.
+    2) Moving a file or directory to another location.
+
+**to Rename a file in Linux Using `mv` Command
+   syntax: mv filename.txt  rename.txt
+
+**to Move a File in Linux Using `mv` Command 
+  syntax: mv sourcefile <directory path>
+==========================================================================================
+9. rm COMMAND
+**generally used to delete the files created in the directory.
+ syntax: rm filename
+
+**Like in cp, the -i option makes the command ask the user for confirmation before removing each file, 
+you have to press y for confirm deletion, any other key leaves the file un-deleted.
+  syntax: rm -i f1.tt
+**rm prompts for confirmation removal if a file is write protected. 
+The -f option overrides this minor protection and removes the file forcefully.
+  syntax : rm -f f1.txt
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
